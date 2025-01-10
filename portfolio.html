@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="portfolio.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <nav class="parent navbar-expand-lg p-3 px-5" style="color: white" style="">
+      <div
+        class="container-fluid d-flex flex-row align-items-center"
+        style="gap: 400px"
+      >
+        <a class="navbar-brand" style="font-size: x-large" href="#"
+          ><span style="color: rgb(241, 90, 25)">Sha</span>reef</a
+        >
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent ">
+          <ul class="d-flex list-unstyled gap-4 me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#"
+                >Services</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Experiance</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#education">Education</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="">
+            <button
+              class="btn"
+              style="background-color: white; font-weight: 500; color: grey"
+              type="submit"
+            >
+              Contact Me
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <div
+      class="d-flex justify-content-between align-items-center gap-5"
+      style="padding: 0px 100px 0px 100px; height: 90vh"
+    >
+      <div class="box d-flex w-75 gap-2">
+        <div
+          style="
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 700;
+          "
+        >
+          <h3 class="header text-black">Hi</h3>
+          <h1 class="text-black">
+            I'am <span style="color: rgb(241, 90, 25)">Shareef</span>
+          </h1>
+          <h1 class="text-black">a Front End Devoloper</h1>
+        </div>
+        <h6 class="text-black w-75">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+          explicabo totam quo doloribus eveniet architecto autem hic beatae
+          ratione amet, ducimus iste aspernatur sed sequi rerum voluptas qui,
+          saepe ut?
+        </h6>
+        <div class="d-flex gap-3">
+          <button class="bg-black text-white px-3 py-2 rounded-2">
+            Hire Me
+          </button>
+          <button
+            class="text-white px-3 py-2 rounded-2"
+            style="background-color: rgb(243, 46, 11)"
+          >
+            Experiance
+          </button>
+        </div>
+      </div>
+      <div
+        class="bg-black overflow-hidden"
+        style="width: 350px; height: 400px; border-radius: 50%"
+      >
+        <img
+          class="image object-fit-cover"
+          src="./image/pexels-sulimansallehi-1704488.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+    <div
+      id="education"
+      class="d-flex h-100 bg-black text-white justify-content-center px-5 align-items-center gap-5"
+    >
+      <div
+        class="profile bg-black object-fit-cover overflow-hidden"
+        style="width: 400px; height: 500px; border-radius: 50%"
+      >
+        <img
+          class="image object-fit-cover"
+          src="./image/pexels-3motional-studio-407102-1081685.jpg"
+          alt=""
+        />
+      </div>
+      <div class="w-75 gap-2">
+        <div>
+          <h3 class="header">
+            About <span style="color: rgb(241, 90, 25)">Me</span>
+          </h3>
+          <h1 class="">
+            Frontend <span style="color: rgb(241, 90, 25)">Developer</span>
+          </h1>
+        </div>
+        <h6 class="w-75">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit
+          explicabo totam quo doloribus eveniet architecto autem hic beatae
+          ratione amet, ducimus iste aspernatur sed sequi rerum voluptas qui,
+          saepe ut?
+        </h6>
+        <button
+          class="text-white px-3 py-2 rounded-2"
+          style="background-color: rgb(243, 46, 11)"
+          style="width: fit-content"
+        >
+          Experiance
+        </button>
+      </div>
+    </div>
+
+    <div class="p-md-4" style="height: 100vh;">
+      <h1 class="d-flex justify-content-center mt-5">
+        Contact <span style="color: rgb(241, 90, 25)">Me</span>
+      </h1>
+      <form class="form">
+        <div class="inputs p-md-3  d-flex flex-column justify-content-center align-items-center gap-3" style="">
+          <input class="p-2" type="text" style="border-radius: 5px;width: 400px;border: none;" placeholder="Full Name">
+          <input class="p-2" type="email" style="border-radius: 5px;width: 400px;" placeholder="E-mail">
+          <input class="p-2" type="number" style="border-radius: 5px;width: 400px;" placeholder="Phone Number">
+          <input class="p-2" type="text" style="border-radius: 5px;width: 400px;" placeholder="..........">
+          <textarea class="" style="height: 100px;width: 400px ;padding-left: 140px;" name="" id="">Messege Me</textarea>
+  </div>
+
+      </form>
+    </div>
+    <div class="h-25">
+      <footer class="logos object-fit-cover bg-black h-100 d-flex justify-content-center align-items-center"><img class="" src="./image/footer.png" alt=""> Contact @example.com Phonnumber Address</footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

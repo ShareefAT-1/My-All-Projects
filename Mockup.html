@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Vanta Clouds Effect</title>
+    <!-- External Styles (Optional) -->
+    <style>
+        /* Full-screen container for the background effect */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        /* Container where the Vanta.js effect will be applied */
+        .s-page-1 .s-section-1 .s-section {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1; /* Ensures the effect is in the background */
+        }
+
+        /* Basic styling for page content */
+        .content {
+            position: relative;
+            z-index: 1;
+            color: white;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding-top: 50px;
+        }
+
+        h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.5rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Page structure -->
+    <div class="s-page-1">
+        <div class="s-section-1">
+            <div class="s-section">
+                <!-- This section will have the cloud background effect -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Page content (will be displayed on top of the background effect) -->
+    <div class="content">
+        <h1>Welcome to My Website</h1>
+        <p>This page has a cool cloud background effect!</p>
+    </div>
+
+    <!-- External Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.clouds.min.js"></script>
+    
+    <script>
+        // Function to apply the Vanta Clouds effect
+        var setVanta = () => {
+            if (window.VANTA) {
+                window.VANTA.CLOUDS({
+                    el: ".s-page-1 .s-section-1 .s-section", // Target the section for the effect
+                    mouseControls: true,  // Enable mouse interaction
+                    touchControls: true,  // Enable touch interaction for mobile devices
+                    gyroControls: false,  // Disable gyroscopic controls
+                    minHeight: 200,  // Minimum height for the effect
+                    minWidth: 200    // Minimum width for the effect
+                });
+            }
+        };
+
+        // Initialize Vanta on page load
+        window.addEventListener('load', () => {
+            setVanta(); // Apply the effect on page load
+            window.edit_page.Event.subscribe("Page.beforeNewOneFadeIn", setVanta); // Reapply on page transition if needed
+        });
+    </script>
+    
+</body>
+</html>
